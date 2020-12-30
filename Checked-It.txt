@@ -1,0 +1,40 @@
+1) add Manufacturer
+if “Manufacturer already exists”
+print “Manufacturer already exists” else
+add Manufacturer
+2) add Pharmacist
+if “Pharmacist already exists”
+print “Pharmacist already exists”
+else
+add Pharmacist
+3) add Doctor
+if “Doctor already exists”
+print “Doctor already exists”
+else
+add Doctor with ID of authentic doctor
+4) add Medicine,
+add MedicineID, Name, QuantityAllowedPerPurchase
+5) create medicine unit
+if “Manufacturer
+add Medicine ID, QuantityManufactured
+6) transfer medicine unit
+7) if “Manufacturer and MedicineQuantityInStock” transfer MedicineID, Quantity,
+ToPharmacistAddresselse
+print “Medicine is not in stock with Manufacturer”
+8) create prescription
+if “Doctor”
+create prescription for PatientAddress, MedicineID, Quantity, Reasonelse
+print “Only Doctors can access this”
+9) deliver to patient
+if (PrescriptionFromValidDoctor) and (MedicineQuantityInStock) and
+(MedicineQuantity <= MaximumMedicineLimit) deliver medicine
+Reduce stock in Pharmacist’s Medicine Quantityelse if
+(MedicineQuantityNOTInStock)
+do not deliver medicine
+print “Pharmacists does not have stock”
+elseif (NoValidPrescription)
+do not deliver medicine
+print “Prescription doesn’t exist”
+else
+do not deliver medicine
+print “medicine limit more than maximum medicine limit”
